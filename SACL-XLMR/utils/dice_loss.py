@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# file: dice_loss.py
-# description:
-# implementation of dice loss for NLP tasks.
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -156,8 +152,8 @@ class DiceLoss(nn.Module):
         else:
             for label_idx in range(logits_size):
                 pos_example = target == label_idx
-                flat_input_idx = flat_input[:, label_idx]  # 概率值
-                flat_target_idx = flat_target[:, label_idx]  # 有正样本，有负样本 【N, 】
+                flat_input_idx = flat_input[:, label_idx]
+                flat_target_idx = flat_target[:, label_idx]
 
                 loss_idx = self._compute_dice_loss(flat_input_idx.view(-1, 1), flat_target_idx.view(-1, 1))
                 if loss is None:

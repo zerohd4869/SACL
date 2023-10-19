@@ -20,9 +20,9 @@ cd SACL/SACL-XLMR
 Download the `afro-xlmr-large` model parameters from [here](https://huggingface.co/Davlan/afro-xlmr-large) and place them in the `/SACL/ptms/afro-xlmr-large/` directory. Download the best SACL-XLMR model parameters from [here](https://drive.google.com/file/d/17bBEuUfKiOgaIwafQz5eyBOzzLPRIjow/view?usp=sharing), extract them, and place them in the `/SACL/SACL-XLMR/sacl_xlmr_best_models/` directory.
 Notably, due to cloud storage capacity limitation, we only provide the best 1-fold model parameters for SACL-XLMR.
 
-2. Install related dependencies
+2. Install dependencies
 ``` 
-# Python 3.7.16, Tesla V100 32GB
+# env: Python 3.7.16, Tesla V100 32GB
 pip install -r sacl_xlmr_requirements.txt
 ```
 
