@@ -21,7 +21,7 @@ Download the `afro-xlmr-large` model parameters from [here](https://huggingface.
 Notably, due to cloud storage capacity limitation, we only provide the best 1-fold model parameters for SACL-XLMR.
 
 2. Install related dependencies
-```
+``` 
 # Python 3.7.16, Tesla V100 32GB
 pip install -r sacl_xlmr_requirements.txt
 ```
