@@ -1,7 +1,7 @@
 # SACL-XLMR
 
 This repository provides the official repository of the paper [UCAS-IIE-NLP at SemEval-2023 Task 12: Enhancing Generalization of
-Multilingual BERT for Low-resource Sentiment Analysis](https://aclanthology.org/2023.semeval-1.255.pdf) (**Accepted by [SemEval@ACL 2023].
+Multilingual BERT for Low-resource Sentiment Analysis](https://aclanthology.org/2023.semeval-1.255.pdf) (**Accepted by [SemEval@ACL 2023]**).
 
 
 ## Introduction
@@ -15,7 +15,7 @@ Specifically, the system employs a lexicon-based multilingual BERT to facilitate
 1. Clone the repository and download related models
 ```
 git clone https://github.com/zerohd4869/SACL.git
-cd SACL/SACL-XLMR
+cd /SACL/SACL-XLMR
 ```
 Download the `afro-xlmr-large` model parameters from [here](https://huggingface.co/Davlan/afro-xlmr-large) and place them in the `/SACL/ptms/afro-xlmr-large/` directory. Download the best SACL-XLMR model parameters from [here](https://drive.google.com/file/d/17bBEuUfKiOgaIwafQz5eyBOzzLPRIjow/view?usp=sharing), extract them, and place them in the `/SACL/SACL-XLMR/sacl_xlmr_best_models/` directory.
 Notably, due to cloud storage capacity limitation, we only provide the best 1-fold model parameters for SACL-XLMR.
