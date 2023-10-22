@@ -1,4 +1,4 @@
-# SACL-XLMR
+# SACL-LSTM
 
 This repository provides the official repository of the paper [Supervised Adversarial Contrastive Learning for Emotion Recognition in Conversations](https://aclanthology.org/2023.acl-long.606.pdf) (**Accepted by [ACL 2023]**).
 
