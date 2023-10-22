@@ -1,6 +1,6 @@
 # SACL-LSTM
 
-This repository provides the official repository of the paper [Supervised Adversarial Contrastive Learning for Emotion Recognition in Conversations](https://aclanthology.org/2023.acl-long.606.pdf) (**Accepted by [ACL 2023]**).
+This repository provides the official repository of the paper [Supervised Adversarial Contrastive Learning for Emotion Recognition in Conversations](https://arxiv.org/pdf/2306.01505.pdf) (**Accepted by [ACL 2023]**).
 
 ## Introduction
 In this work, we present a supervised adversarial contrastive learning (SACL) framework for learning class-spread structured representations in a supervised manner. 
