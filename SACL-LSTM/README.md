@@ -70,7 +70,7 @@ IEMOCAP dataset:
 |Model |Happy|Sad|Neutral|Angry|Excited|Frustrated|*Acc*|*Macro-F1*|*Weighted-F1*|
 |:----- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |**SACL-LSTM (paper, the average result with five random seeds)** |56.91|84.78|70.00|64.09|69.70|65.02|69.08|68.42|69.22|
-|SACL-LSTM (the result with a best seed) |58.72|84.85|70.96|64.67|71.27|63.87|69.62|69.06|69.70|
+|SACL-LSTM (the result with one seed) |58.72|84.85|70.96|64.67|71.27|63.87|69.62|69.06|69.70|
 
 
 MELD dataset:
@@ -78,7 +78,16 @@ MELD dataset:
 |Model |Neutral|Surprise|Fear|Sad|Happy|Disgust|Anger|*Acc*|*Macro-F1*|*Weighted-F1*|
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |**SACL-LSTM (paper, the average result with five random seeds)** |80.17|58.77|26.23|41.34|64.98|31.47|52.35|67.51|50.76|66.45|
-|SACL-LSTM (the result with a best seed) |80.30|59.66|28.57|41.46|65.25|31.19|53.55|67.89|51.43|66.86|
+|SACL-LSTM (the result with one seed) |80.30|59.66|28.57|41.46|65.25|31.19|53.55|67.89|51.43|66.86|
+
+
+EmoryNLP dataset:
+
+|Model |Joyful|Mad|Peaceful|Neutral|Sad|Powerful|Scared|*Acc*|*Macro-F1*|*Weighted-F1*|
+|:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|**SACL-LSTM (paper, the average result with five random seeds)** |54.78|37.68|11.66|55.42|25.83|5.43|37.11|42.21|32.56|39.65|
+|SACL-LSTM (the result with one seed) |54.47|41.71|11.92 |56.00|26.98|7.81|37.31|43.19|33.74|40.47|
+
 
 ## Citation
 
