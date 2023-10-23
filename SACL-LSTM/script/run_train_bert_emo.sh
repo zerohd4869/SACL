@@ -7,7 +7,7 @@ VV="sacl_lstm-text-softmax7"
 
 
 DATASET="emorynlp"
-DATA_DIR="${WORK_DIR}/data/${DATASET}/emorynlp_features_roberta.pkl"
+DATA_DIR="${WORK_DIR}/data/emorynlp/emorynlp_features_roberta.pkl"
 
 SEED="4 3 2 1 0" # "2021"
 G="1" # 0 [1]

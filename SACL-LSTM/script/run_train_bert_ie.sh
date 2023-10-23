@@ -7,7 +7,7 @@ VV="sacl_lstm-text-softmax6"
 
 
 DATASET="iemocap"
-DATA_DIR="${WORK_DIR}/data/${DATASET}/iemocap_features_roberta.pkl"
+DATA_DIR="${WORK_DIR}/data/iemocap/iemocap_features_roberta.pkl"
 
 SEED="4 3 2 1 0"
 G="0" # [0] 1

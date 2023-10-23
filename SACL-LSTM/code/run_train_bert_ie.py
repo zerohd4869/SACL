@@ -186,7 +186,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--output_dir', type=str, default='../outputs/iemocap/sacl_lstm_iemocap', help='saved model dir')
 
-    parser.add_argument('--load_model_state_dir', type=str, default='../sacl_lstm_best_models/sacl_lstm_iemocap/4/loss_sacl-lstm.pkl', help='load model state dir')
+    parser.add_argument('--load_model_state_dir', type=str, default='../sacl_lstm_best_models/iemocap/4/loss_sacl-lstm.pkl', help='load model state dir')
 
     parser.add_argument('--base_model', default='LSTM', help='base model, LSTM/GRU/Linear')
 

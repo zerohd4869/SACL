@@ -222,7 +222,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--output_dir', type=str, default='../outputs/meld/sacl_lstm_meld', help='saved model dir')
 
-    parser.add_argument('--load_model_state_dir', type=str, default='../sacl_lstm_best_models/sacl_lstm_meld/4/loss_sacl-lstm.pkl', help='load model state dir')
+    parser.add_argument('--load_model_state_dir', type=str, default='../sacl_lstm_best_models/meld/4/loss_sacl-lstm.pkl', help='load model state dir')
 
     parser.add_argument('--base_model', default='LSTM', help='base model, LSTM/GRU/Linear')
 
@@ -488,9 +488,9 @@ if __name__ == '__main__':
 
         print('Final Test performance...')
         print('Early stoping...', patience, patience2)
-        print('Eval-metric: F1, Epoch: {}, best_eval_fscore: {}, Accuracy: {}, F1-Score: {}'.format(best_epoch, best_eval_fscore,
-                                                                                                    all_test_acc[best_epoch] if best_epoch >= 0 else 0,
-                                                                                                    all_test_fscore[best_epoch] if best_epoch >= 0 else 0))
+        # print('Eval-metric: F1, Epoch: {}, best_eval_fscore: {}, Accuracy: {}, F1-Score: {}'.format(best_epoch, best_eval_fscore,
+        #                                                                                             all_test_acc[best_epoch] if best_epoch >= 0 else 0,
+        #                                                                                             all_test_fscore[best_epoch] if best_epoch >= 0 else 0))
         print('Eval-metric: Loss, Epoch: {}, Accuracy: {}, F1-Score: {}'.format(best_epoch2,
                                                                                 all_test_acc[best_epoch2] if best_epoch2 >= 0 else 0,
                                                                                 all_test_fscore[best_epoch2] if best_epoch2 >= 0 else 0))
