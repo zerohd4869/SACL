@@ -4,7 +4,7 @@ This repository provides the official code for the paper [Supervised Adversarial
 
 ## Introduction
 The work presents a supervised adversarial contrastive learning (SACL) framework for learning class-spread structured representations in a supervised manner. 
-Under the framework with contextual adversarial training, it also introduces a sequence-based SACL-LSTM model that learns label-consistent and context-robust features for the ERC task.
+Under the framework with contextual adversarial training, a sequence-based SACL-LSTM model is introduced to learn label-consistent and context-robust features for the ERC task.
 
 ## Quick Start
 
@@ -14,7 +14,7 @@ git clone https://github.com/zerohd4869/SACL.git
 cd /SACL/SACL-LSTM
 ```
 
-To extract the roberta features for the target dataset, follow the scripts in the [COSMIC](https://github.com/declare-lab/conv-emotion/tree/master/COSMIC/feature-extraction) repo and place them in the `/SACL/SACL-LSTM/data/` directory.
+Extract the roberta features for the target dataset following the scripts in the [COSMIC](https://github.com/declare-lab/conv-emotion/tree/master/COSMIC/feature-extraction) repo, and place them in the `/SACL/SACL-LSTM/data/` directory.
 
 
 2. Install dependencies
@@ -59,7 +59,7 @@ pip install -r sacl_lstm_requirements.txt
 3. Run examples
 ```
 # Three datasets: IEMOCAP, MELD, and EmoryNLP
-nohup bash script/run_train_bert_inference.sh >  sacl_lstm_bert_inference.out &
+bash script/run_train_bert_inference.sh &
 
 ```
 

@@ -9,12 +9,14 @@ SACL-XLMR employs a lexicon-based multilingual BERT to facilitate language adapt
 
 ## Result Reproduction for AfriSenti-SemEval Task C 
 
-1. Clone the repository and download related models
+1. Clone the repository and download related data and models
 ```
 git clone https://github.com/zerohd4869/SACL.git
 cd /SACL/SACL-XLMR
 ```
-Download the `afro-xlmr-large` model parameters from [here](https://huggingface.co/Davlan/afro-xlmr-large) and place them in the `/SACL/ptms/afro-xlmr-large/` directory. Download the best SACL-XLMR model parameters from [here](https://drive.google.com/file/d/17bBEuUfKiOgaIwafQz5eyBOzzLPRIjow/view?usp=sharing), extract them, and place them in the `/SACL/SACL-XLMR/sacl_xlmr_best_models/` directory.
+Download the `afro-xlmr-large` model parameters from [here](https://huggingface.co/Davlan/afro-xlmr-large) and place them in the `/SACL/ptms/afro-xlmr-large/` directory. 
+Then, download the related data from [here](https://drive.google.com/file/d/1c6TwpVDoH1Uj-0E7L0BWNxaKW2WZlwfL/view?usp=share_link), and place the unzip files in the `/SACL/SACL-XLMR/afrisent-semeval-2023/` directory.
+And download the best SACL-XLMR model parameters from [here](https://drive.google.com/file/d/17bBEuUfKiOgaIwafQz5eyBOzzLPRIjow/view?usp=sharing), and place the unzip files in the `/SACL/SACL-XLMR/sacl_xlmr_best_models/` directory.
 Please note that we only provide the best 1-fold model parameters for SACL-XLMR due to cloud storage capacity limitation.
 
 2. Install dependencies
