@@ -45,7 +45,7 @@ git clone https://github.com/zerohd4869/SACL.git
 cd /SACL/SACL-LSTM
 ```
 
-The original datasets can be found at [IEMOCAP](https://sail.usc.edu/iemocap/), [SEMAINE](https://semaine-db.eu), and [MELD](https://github.com/SenticNet/MELD). 
+The original datasets can be found at [IEMOCAP](https://sail.usc.edu/iemocap/), [MELD](https://github.com/SenticNet/MELD), and [EmoryNLP](https://github.com/emorynlp/character-mining). 
 Download the processed data features with `roberta-large` embedding from [here](https://drive.google.com/file/d/1TQYQYCoPtdXN2rQ1mR2jisjUztmOzfZr/view) and place them in the `/SACL/SACL-LSTM/data/` directory. 
 Then, download the best SACL-LSTM model parameters from [here](https://drive.google.com/file/d/1TRDeo6speGlmQ5tmV7Jv6NSwg-Pyw4Iv/view?usp=sharing), unzip the file, and place them in the `/SACL/SACL-LSTM/sacl_lstm_best_models/` directory.
 
@@ -63,6 +63,22 @@ bash script/run_train_bert_inference.sh &
 
 ```
 
+4. Results of SACL-LSTM
+
+IEMOCAP dataset:
+
+|Model |Happy|Sad|Neutral|Angry|Excited|Frustrated|*Acc*|*Macro-F1*|*Weighted-F1*|
+|:----- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|**SACL-LSTM (paper, the average result with five random seeds)** |56.91|84.78|70.00|64.09|69.70|65.02|69.08|68.42|69.22|
+|SACL-LSTM (the result with a best seed) |58.72|84.85|70.96|64.67|71.27|63.87|69.62|69.06|69.70|
+
+
+MELD dataset:
+
+|Model |Neutral|Surprise|Fear|Sad|Happy|Disgust|Anger|*Acc*|*Macro-F1*|*Weighted-F1*|
+|:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|**SACL-LSTM (paper, the average result with five random seeds)** |80.17|58.77|26.23|41.34|64.98|31.47|52.35|67.51|50.76|66.45|
+|SACL-LSTM (the result with a best seed) |80.30|59.66|28.57|41.46|65.25|31.19|53.55|67.89|51.43|66.86|
 
 ## Citation
 
