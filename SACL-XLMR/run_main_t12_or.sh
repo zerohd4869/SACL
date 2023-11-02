@@ -4,7 +4,7 @@ export CUDA_VISIBLE_DEVICES=0
 cat ./run_main_t12_or.sh
 
 WORK_DIR="/SACL/SACL-XLMR"
-MODEL_BASE="/SACL/ptms/afro-xlmr-large" # Davlan/afro-xlmr-large3
+MODEL_BASE="/SACL/ptms/afro-xlmr-large" # Davlan/afro-xlmr-large
 #CACHE_DIR="/SACL/ptms/afro-xlmr-large"
 
 
