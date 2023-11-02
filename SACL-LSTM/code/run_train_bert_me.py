@@ -14,7 +14,6 @@ from sklearn.metrics import f1_score, accuracy_score, confusion_matrix
 from torch.utils.data import DataLoader
 from torch.utils.data.sampler import SubsetRandomSampler
 from loss import FocalLoss
-from contrastive_loss import *
 
 
 def seed_everything(seed=2021):
