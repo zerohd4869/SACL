@@ -446,8 +446,6 @@ if __name__ == '__main__':
                     best_epoch2, best_eval_loss = e, eval_loss
                     patience2 = 0
                     if not os.path.exists(output_path): os.makedirs(output_path)
-                    # save_model_dir = os.path.join(output_path, 'loss_{}_{}.pkl'.format(name, e).lower())
-                    # torch.save(model.state_dict(), save_model_dir)
                     save_model_dir = os.path.join(output_path, 'loss_{}.pkl'.format(name).lower())
                     torch.save(model.state_dict(), save_model_dir)
 
